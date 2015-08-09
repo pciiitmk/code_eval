@@ -44,12 +44,7 @@ public class Main {
 	}
 	
 	public static int reverse (int number) {
-		int sum = 0;
-		while (number != 0) {
-			sum = (sum * 10) + (number % 10);
-			number = number / 10;
-		}
-		return sum;
+		return Integer.parseInt(new StringBuilder (Integer.toString(number)).reverse().toString());
 	}
 	
 	public static boolean isPalendrome (int number) {
